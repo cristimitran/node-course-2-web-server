@@ -22,9 +22,9 @@ app.use((req, res, next) => {
     next(); //required to continue
 });
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public')); //app.use to use middleware
 
